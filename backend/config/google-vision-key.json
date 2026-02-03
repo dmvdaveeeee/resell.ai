@@ -1,0 +1,15 @@
+# 1. Create project folder
+mkdir sourcing-platform && cd sourcing-platform
+
+# 2. Setup Frontend
+npx create-next-app@latest frontend --tailwind --app
+cd frontend
+npm install lucide-react
+cd ..
+
+# 3. Setup Backend
+mkdir backend && cd backend
+npm init -y
+npm install express cors pg dotenv puppeteer @google-cloud/vision multer
+npm install -D nodemon
+cd ..
