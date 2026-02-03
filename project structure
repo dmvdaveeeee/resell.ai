@@ -1,0 +1,20 @@
+sourcing-platform/
+├── frontend/                 # Next.js App
+│   ├── .env.local           # Frontend API keys (safe)
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── page.js      # Main search interface
+│   │   │   ├── api/         # Frontend API routes
+│   │   └── components/
+│   └── package.json
+├── backend/                  # Express.js Server
+│   ├── .env                 # Backend secrets (NEVER commit this)
+│   ├── server.js            # Main server
+│   ├── routes/
+│   │   ├── search.js        # Product search logic
+│   │   └── suppliers.js     # Supplier management
+│   ├── scrapers/            # Web scraping modules
+│   └── package.json
+├── database/                 # Database setup
+│   └── schema.sql
+└── docker-compose.yml        # One-command setup
