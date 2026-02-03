@@ -1,0 +1,2 @@
+cd frontend  # Must be INSIDE frontend folder
+vercel --prod
